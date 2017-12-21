@@ -20,7 +20,6 @@ public class VolumePackage implements ReactPackage {
 		return modules;
 	}
 
-	@Override
 	public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
 		return Collections.emptyList();
 	}
