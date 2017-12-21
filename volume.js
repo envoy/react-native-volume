@@ -23,7 +23,7 @@ export function getMaxVolume() {
 }
 
 export function onVolumeChange(listener) {
-	NativeAppEventEmitter.addListener('volumeChange', data => {
+	return NativeAppEventEmitter.addListener('volumeChange', data => {
 		listener(data.volume);
 	});
 }
